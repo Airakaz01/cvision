@@ -665,8 +665,8 @@ body {
     padding-left: 25px;
 }
 .roadmap-list li {
-    margin-bottom: 18px;
-    line-height: 1.7;
+    /* margin-bottom: 15px; */
+    /* line-height: 1.7; */
     font-size: 1.05em;
 }
 
@@ -811,11 +811,11 @@ body {
 .next-steps-container ol {
     padding-left: 30px;
 }
-.next-steps-container li {
-    margin-bottom: 15px;
+/* .next-steps-container li {
+    margin-bottom: 10px;
     line-height: 1.7;
     font-size: 1.05em;
-}
+} */
 
 /* Footer slide */
 .slide-footer {
@@ -952,6 +952,8 @@ body:-ms-fullscreen .slide {
 
 #slide19 .next-steps-container {
     padding: 30px;
+    padding-bottom: 10px;
+
 }
 
 #slide19 .synthesis-box p {
@@ -1031,4 +1033,312 @@ body:-moz-full-screen #slide13 .slide-content {
     .full-width {
         flex-direction: column;
     }
+}
+
+/* Grille Principale */
+.lean-canvas-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 colonnes égales */
+    grid-template-rows: 2.5fr 1fr; /* La ligne du haut est plus haute */
+    gap: 15px; /* Espace entre les boites */
+    height: 80%; /* Prend bien la place sur la slide */
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* Style de base des boites */
+.canvas-box {
+    border: 1px solid #333; /* Bordure fine noire comme l'image */
+    background: white;
+    padding: 15px;
+    font-size: 0.9em; /* Ajuste selon la taille de ton écran */
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.canvas-box strong {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* --- COULEURS SPÉCIFIQUES (Comme l'image) --- */
+
+/* Proposition de Valeur (Bleu lavande) */
+.highlight-box {
+    background-color: #E0E0FF !important; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre le texte verticalement pour l'effet */
+    align-items: center;
+    text-align: center;
+}
+
+/* Coûts (Vert clair) - Prend 2 colonnes (sous Problème et Solution) */
+.cost-box {
+    grid-column: span 2; 
+    background-color: #EAFAEA !important; 
+}
+
+/* Revenus (Orange clair) - Prend 3 colonnes (sous les autres) */
+.rev-box {
+    grid-column: span 3; 
+    background-color: #FFF5E5 !important; 
+}
+
+
+/* Empêche l'image d'exploser */
+.contain-image {
+    max-width: 100%;
+    max-height: 50vh; /* Max 50% de la hauteur de l'écran */
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Centre l'image dans la colonne de droite */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style de la liste Design Thinking */
+.design-steps {
+    counter-reset: design-counter;
+    list-style: none; /* Enlève les numéros par défaut moches */
+    padding: 0;
+}
+
+.design-steps li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    position: relative;
+    font-size: 0.9em;
+    border-left: 4px solid #3498db; /* Petite barre bleue à gauche */
+    background: rgba(52, 152, 219, 0.1); /* Fond bleu très léger */
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+/* 1. Pour centrer l'image au milieu de la slide */
+.flex-column-center, .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centre horizontalement */
+    justify-content: center; /* Centre verticalement */
+    height: 100%;
+    width: 100%;
+}
+
+/* 2. Le style de l'image (Taille contrôlée + Ombre) */
+.dashboard-img {
+    max-width: 90%;       /* Largeur max : 90% de la slide */
+    max-height: 55vh;     /* Hauteur max : 55% de l'écran (IMPORTANT) */
+    object-fit: contain;  /* Garde les proportions (ne pas écraser) */
+    border-radius: 8px;   /* Coins arrondis */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Ombre portée */
+    border: 1px solid #ddd; /* Fine bordure grise */
+}
+
+/* --- LAYOUT SPÉCIFIQUE AGILE --- */
+.two-columns-agile {
+    display: flex;
+    gap: 20px;
+    height: 80%;
+    align-items: flex-start;
+}
+
+.col-left-agile { flex: 1; }
+.col-right-agile { flex: 2; } /* Le Kanban prend plus de place */
+
+/* Liste avec flèches triangulaires (comme l'image) */
+.agile-list {
+    list-style: none;
+    padding: 0;
+}
+
+.agile-list li {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    position: relative;
+    padding-left: 30px;
+}
+
+.agile-list li::before {
+    content: "▶"; /* Triangle */
+    position: absolute;
+    left: 0;
+    color: #34495e;
+    font-size: 0.8em;
+    top: 4px;
+}
+
+/* --- LE KANBAN BOARD --- */
+.kanban-board {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.k-column {
+    flex: 1;
+    border: 2px solid #ccc;
+    padding: 10px;
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 300px;
+}
+
+.k-title {
+    text-align: center;
+    margin: 0 0 15px 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Style des Cartes (Les boites à l'intérieur) */
+.k-card {
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.7em;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.k-card i {
+    font-weight: normal;
+    font-size: 0.9em;
+    display: block;
+    margin-top: 3px;
+}
+
+/* --- COULEURS SPÉCIFIQUES (Image Style) --- */
+
+/* 1. À FAIRE (Gris / Jaune) */
+.todo-col { border-color: #bdc3c7; background-color: #f4f4f4; }
+.todo-col .k-title { color: #555; }
+.todo-card {
+    background-color: #ffeaa7; /* Jaune Post-it */
+    color: #d35400;
+}
+
+/* 2. EN COURS (Bleu) */
+.doing-col { border-color: #a29bfe; background-color: #f0f0ff; }
+.doing-col .k-title { color: #0000ff; }
+.doing-card {
+    background-color: #74b9ff; /* Bleu Ciel */
+    color: #000; /* Texte noir ou bleu très foncé */
+    background: linear-gradient(to bottom, #81ecec, #74b9ff); /* Petit dégradé sympa */
+}
+
+/* 3. TERMINÉ (Vert) */
+.done-col { border-color: #55efc4; background-color: #f0fff0; }
+.done-col .k-title { color: #008000; }
+.done-card {
+    background-color: #55efc4; /* Vert Menthe */
+    color: #004d00;
+}
+/* --- STYLE SLIDE CLÔTURE (BOXES) --- */
+
+/* 1. Force les colonnes à prendre toute la hauteur disponible */
+#slide18 .two-columns {
+    height: 70vh; /* Prend 70% de la hauteur de l'écran */
+    align-items: stretch; /* Les deux boites auront la même hauteur */
+    gap: 40px; /* Espace entre les deux boites */
+}
+
+/* 2. Le style "Carte" pour les boites gauche et droite */
+.box-style {
+    background-color: #f8f9fa; /* Fond gris très léger */
+    border-radius: 15px;       /* Coins bien arrondis */
+    padding: 40px;             /* Gros espace intérieur pour aérer */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Ombre douce portée */
+    border-top: 5px solid #00C4CC; /* Petite touche de couleur Turquoise en haut */
+    
+    /* Pour centrer le contenu verticalement si peu de texte */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+
+/* 3. Les Titres h3 dans les boites */
+.box-style h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    font-size: 1.4em;
+}
+
+/* --- STYLE DES LISTES --- */
+.checklist, .rex-list {
+    list-style: none; /* Enlève les puces moches par défaut */
+    padding: 0;
+    margin: 0;
+}
+
+.checklist li, .rex-list li {
+    font-size: 1.2em; /* Texte plus grand */
+    margin-bottom: 25px; /* Espace entre les lignes */
+    display: flex;
+    align-items: center; /* Aligne l'icône et le texte */
+}
+
+/* Style des icônes pour qu'elles soient jolies */
+.checklist i, .rex-list i {
+    font-size: 1.5em; /* Icônes plus grandes */
+    margin-right: 20px; /* Espace entre icône et texte */
+    min-width: 40px; /* Pour aligner parfaitement le texte même si l'icône change */
+    text-align: center;
+}
+
+/* --- COULEURS DES ICÔNES (Si pas déjà définies) --- */
+.fa-check-square { color: #27ae60; } /* Vert pour validation */
+
+.text-success { color: #27ae60 !important; } /* Vert */
+.text-danger { color: #e74c3c !important; }  /* Rouge */
+.text-info { color: #3498db !important; }    /* Bleu */
+
+/* --- STYLE EN-TÊTE LOGOS --- */
+.logos-header {
+    display: flex;
+    justify-content: space-between; /* Écarte les logos (Gauche / Droite) */
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px; /* Espace avant le titre */
+    padding: 0 20px; /* Petite marge sur les côtés */
+}
+
+.school-logo {
+    height: 70px; /* Taille standard pour les logos académiques */
+    width: auto;
+    object-fit: contain;
+}
+
+/* --- STYLE FILIÈRE --- */
+.academic-context {
+    margin-top: 15px;
+}
+
+.filiere-text {
+    font-size: 1.1em; /* Un peu plus grand que le contexte */
+    color: var(--secondary-color); /* Bleu foncé */
+    font-weight: bold;
+    text-transform: uppercase; /* En majuscules pour faire officiel */
+    letter-spacing: 1px; /* Espacement des lettres élégant */
+    margin-top: 5px;
+}
+
+/* Ajustement du titre principal pour l'équilibre */
+.main-title {
+    font-size: 3.5em; /* Gros titre */
+    margin-bottom: 10px;
+    color: var(--primary-color); /* Turquoise */
 }
