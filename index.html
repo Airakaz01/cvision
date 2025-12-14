@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation CVision</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navigation">
+        <button class="nav-btn" id="prevBtn">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+        
+        <div class="slide-counter">
+            <span id="currentSlide">1</span> / <span id="totalSlides">16</span>
+        </div>
+        
+        <button class="nav-btn" id="nextBtn">
+            <i class="fas fa-arrow-right"></i>
+        </button>
+        
+        <button class="present-btn" id="presentBtn">
+            <i class="fas fa-expand"></i> Présentation
+        </button>
+    </nav>
+
+    <!-- Slides Container -->
+    <main class="slides-container" id="slidesContainer">
+        
+        <!-- 0. Couverture -->
+        <section class="slide active" id="slide1">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="main-title">CVISION</h1>
+                    <h2 class="subtitle">L'Assistant Carrière Propulsé par l'IA</h2>
+                </div>
+                <div class="slide-body">
+                    <div class="divider"></div>
+                    <p class="main-description"><strong>Optimisez votre CV pour passer le filtre des robots</strong></p>
+                    
+                    <div class="presenters">
+                        <div class="presenter-card"><i class="fas fa-user"></i> <span>Zakaria EL HOUARI</span></div>
+                        <div class="presenter-card"><i class="fas fa-user"></i> <span>Youness BOUMLIK</span></div>
+                        <div class="presenter-card"><i class="fas fa-user"></i> <span>Abdellah BOULIDAM</span></div>
+                    </div>
+                    
+                    <div class="supervisor">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>Encadré par : Pr. Hind HAFSI</span>
+                    </div>
+                    
+                    <div class="date">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Décembre 2025</span>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">1</span></footer>
+        </section>
+
+        <!-- 1. Introduction -->
+        <section class="slide" id="slide2">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">INTRODUCTION</h1>
+                </div>
+                <div class="slide-body">
+                    <div class="definition-box">
+                        <div class="definition-content">
+                            <p>CVision est une plateforme <strong class="highlight">SaaS</strong> d'optimisation de CV par <strong class="highlight">Intelligence Artificielle</strong> qui analyse la compatibilité avec les <strong class="highlight">ATS (Applicant Tracking Systems)</strong> en temps réel.</p>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-brain"></i>
+                            <p>Analyse IA avancée</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-robot"></i>
+                            <p>Compatibilité ATS</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-bolt"></i>
+                            <p>Résultats instantanés</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-chart-line"></i>
+                            <p>Score de performance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">2</span></footer>
+        </section>
+
+        <!-- 2. Problème et Vision -->
+        <section class="slide" id="slide3">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">PROBLÈME ET VISION</h1>
+                </div>
+                <div class="slide-body">
+                    <div class="comparison-container">
+                        <div class="web-column classic-web">
+                            <div class="web-header">
+                                <i class="fas fa-times-circle"></i>
+                                <h3>LE CONSTAT</h3>
+                            </div>
+                            <ul class="features-list">
+                                <li>Marché de l'emploi ultra-compétitif</li>
+                                <li>Rejets massifs par les ATS</li>
+                                <li>Étudiants démunis face aux outils techniques</li>
+                            </ul>
+                        </div>
+                        <div class="vs-separator"><span>VS</span></div>
+                        <div class="web-column semantic-web">
+                            <div class="web-header">
+                                <i class="fas fa-check-circle"></i>
+                                <h3>LA SOLUTION</h3>
+                            </div>
+                            <ul class="features-list">
+                                <li>Plateforme SaaS d'optimisation de CV</li>
+                                <li>Analyse de compatibilité ATS</li>
+                                <li>Recommandations personnalisées</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">3</span></footer>
+        </section>
+
+        <!-- 3. Objectif SMART -->
+        <section class="slide" id="slide4">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">OBJECTIF SMART</h1>
+                </div>
+                <div class="slide-body">
+                    <div class="objective-box">
+                        <p>"Lancer le MVP d'ici <strong>3 mois</strong>, acquérir <strong>500 utilisateurs</strong> actifs (étudiants) et atteindre un taux de conversion Premium de <strong>2%</strong>."</p>
+                    </div>
+                    <div class="vision-grid">
+                        <div class="vision-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <div>
+                                <h4>RAPIDITÉ</h4>
+                                <p>Optimisation en moins de 5 minutes</p>
+                            </div>
+                        </div>
+                        <div class="vision-item">
+                            <i class="fas fa-bullseye"></i>
+                            <div>
+                                <h4>PRÉCISION</h4>
+                                <p>Analyse approfondie par IA</p>
+                            </div>
+                        </div>
+                        <div class="vision-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>CIBLAGE</h4>
+                                <p>Spécialisation étudiants marocains</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">4</span></footer>
+        </section>
+
+        <!-- 4. Charte de Projet -->
+        <section class="slide" id="slide5">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">CHARTE DE PROJET</h1>
+                </div>
+                <div class="slide-body">
+                    <div class="table-container">
+                        <table class="evolution-table">
+                            <thead>
+                                <tr>
+                                    <th>ÉLÉMENT</th>
+                                    <th>DESCRIPTION</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>OPPORTUNITÉ</strong></td>
+                                    <td>Digitalisation du recrutement et besoin d'accompagnement des jeunes diplômés</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>PÉRIMÈTRE (SCOPE)</strong></td>
+                                    <td><strong>Inclus :</strong> Web App, Upload PDF, Analyse NLP, Scoring, Recommandations<br><strong>Exclus :</strong> Application Mobile (Phase 2), Module "Chasse de tête"</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>LIVRABLES CLÉS</strong></td>
+                                    <td>1. Maquettes UX/UI (Figma)<br>2. Prototype fonctionnel (MVP)<br>3. Documentation technique et Business Plan</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ORGANISATION</strong></td>
+                                    <td><strong>MOA :</strong> Porteurs du projet (Stratégie & Besoin)<br><strong>MOE :</strong> Équipe Technique (Réalisation & Dév)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">5</span></footer>
+        </section>
+
+        <!-- 5. Parties Prenantes -->
+        <section class="slide" id="slide6">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">PARTIES PRENANTES</h1>
+                </div>
+                <div class="slide-body">
+                    <div class="matrix-container">
+                        <div class="matrix-header">
+                            <i class="fas fa-th-large"></i>
+                            <h3>MATRICE POUVOIR / INTÉRÊT</h3>
+                        </div>
+                        <div class="matrix-content">
+                            <div class="matrix-item">
+                                <i class="fas fa-star"></i>
+                                <h4>GÉRER DE PRÈS</h4>
+                                <p>Équipe fondatrice, Administration ENSA (Partenaire clé)</p>
+                            </div>
+                            <div class="matrix-item">
+                                <i class="fas fa-smile"></i>
+                                <h4>SATISFAIRE</h4>
+                                <p>Partenaires Cloud (AWS/Azure), Investisseurs futurs</p>
+                            </div>
+                            <div class="matrix-item">
+                                <i class="fas fa-info-circle"></i>
+                                <h4>INFORMER</h4>
+                                <p>Étudiants (Bêta-testeurs et futurs clients)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">6</span></footer>
+        </section>
+
+        <!-- 6. Analyse SWOT -->
+        <section class="slide" id="slide7">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">ANALYSE SWOT</h1>
+                </div>
+                <div class="slide-body">
+                    <div class="swot-container">
+                        <div class="swot-quadrant strengths">
+                            <div class="quadrant-header">
+                                <i class="fas fa-plus-circle"></i>
+                                <h3>FORCES (INTERNE)</h3>
+                            </div>
+                            <ul class="quadrant-list">
+                                <li>Expertise technique IA</li>
+                                <li>Coûts de structure faibles</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="swot-quadrant weaknesses">
+                            <div class="quadrant-header">
+                                <i class="fas fa-minus-circle"></i>
+                                <h3>FAIBLESSES (INTERNE)</h3>
+                            </div>
+                            <ul class="quadrant-list">
+                                <li>Budget marketing limité</li>
+                                <li>Marque nouvelle</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="swot-quadrant opportunities">
+                            <div class="quadrant-header">
+                                <i class="fas fa-lightbulb"></i>
+                                <h3>OPPORTUNITÉS (EXTERNE)</h3>
+                            </div>
+                            <ul class="quadrant-list">
+                                <li>Chômage des jeunes diplômés</li>
+                                <li>Digitalisation en Afrique</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="swot-quadrant threats">
+                            <div class="quadrant-header">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <h3>MENACES (EXTERNE)</h3>
+                            </div>
+                            <ul class="quadrant-list">
+                                <li>Mises à jour des ATS</li>
+                                <li>Géants (LinkedIn, Canva)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">7</span></footer>
+        </section>
+
+        <!-- 7. Structure de Découpage (WBS) -->
+        <section class="slide" id="slide8">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">STRUCTURE DE DÉCOUPAGE (WBS)</h1>
+                </div>
+                <div class="slide-body">
+                    <div class="wbs-container">
+                        <pre class="code-block">
+Projet CVision
+├── 1. Gestion & Juridique
+│   ├── Business Plan
+│   └── Création SARL
+├── 2. Produit & Tech
+│   ├── Algorithmes IA
+│   ├── Plateforme Web
+│   └── Base de Données
+└── 3. Marketing & Lancement
+    ├── Branding/Logo
+    └── Campagne RS
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">8</span></footer>
+        </section>
+
+        <!-- 8. Matrice RACI -->
+        <section class="slide" id="slide9">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">MATRICE DES RESPONSABILITÉS (RACI)</h1>
+                </div>
+                <div class="slide-body">
+                    <div class="table-container">
+                        <table class="evolution-table">
+                            <thead>
+                                <tr>
+                                    <th>TÂCHE / LOT DE TRAVAIL</th>
+                                    <th>ZAKARIA (CHEF PROJET/TECH)</th>
+                                    <th>YOUNESS (IA LEAD)</th>
+                                    <th>ABDELLAH (PRODUIT/MKTG)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>DÉFINITION ARCHITECTURE</td>
+                                    <td><strong>R</strong></td>
+                                    <td>C</td>
+                                    <td>I</td>
+                                </tr>
+                                <tr>
+                                    <td>DÉV. MODÈLES NLP (IA)</td>
+                                    <td>A</td>
+                                    <td><strong>R</strong></td>
+                                    <td>C</td>
+                                </tr>
+                                <tr>
+                                    <td>DESIGN UI/UX (FIGMA)</td>
+                                    <td>I</td>
+                                    <td>C</td>
+                                    <td><strong>R</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>FRONTEND (REACT)</td>
+                                    <td>C</td>
+                                    <td>I</td>
+                                    <td><strong>R</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>STRATÉGIE MARKETING</td>
+                                    <td>A</td>
+                                    <td>I</td>
+                                    <td><strong>R</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>GESTION DU BUDGET</td>
+                                    <td><strong>R</strong></td>
+                                    <td>I</td>
+                                    <td>I</td>
+                                </tr>
+                                <tr>
+                                    <td>TESTS</td>
+                                    <td>C</td>
+                                    <td><strong>R</strong></td>
+                                    <td>C</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="legend">
+                            <p><strong>LÉGENDE :</strong> <strong>R</strong> : Réalise | <strong>A</strong> : Approuve | <strong>C</strong> : Consulté | <strong>I</strong> : Informé</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">9</span></footer>
+        </section>
+
+        <!-- 9. Budget Prévisionnel -->
+        <section class="slide" id="slide10">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">BUDGET PRÉVISIONNEL</h1>
+                </div>
+                <div class="slide-body">
+                    <div class="table-container">
+                        <table class="evolution-table">
+                            <thead>
+                                <tr>
+                                    <th>POSTE DE DÉPENSE</th>
+                                    <th>TYPE</th>
+                                    <th>COÛT (MAD)</th>
+                                    <th>DÉTAILS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>INFRASTRUCTURE CLOUD</td>
+                                    <td>OPEX</td>
+                                    <td>5,000</td>
+                                    <td>AWS (Instance GPU pour IA) + Vercel</td>
+                                </tr>
+                                <tr>
+                                    <td>NOM DE DOMAINE</td>
+                                    <td>CAPEX</td>
+                                    <td>300</td>
+                                    <td>cvision.ma (pour 2 ans)</td>
+                                </tr>
+                                <tr>
+                                    <td>OUTILS & LICENCES</td>
+                                    <td>CAPEX</td>
+                                    <td>2,700</td>
+                                    <td>Figma Pro, GitHub Pro, API OpenAI</td>
+                                </tr>
+                                <tr>
+                                    <td>MARKETING DIGITAL</td>
+                                    <td>OPEX</td>
+                                    <td>10,000</td>
+                                    <td>LinkedIn Ads, Campagne Facebook</td>
+                                </tr>
+                                <tr>
+                                    <td>VALORISATION RH</td>
+                                    <td>INTERNE</td>
+                                    <td>15,000</td>
+                                    <td>Estimation temps/homme (3 étudiants)</td>
+                                </tr>
+                                <tr>
+                                    <td>RÉSERVE RISQUES</td>
+                                    <td>PROVISION</td>
+                                    <td>2,000</td>
+                                    <td>6% du budget cash</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>TOTAL CASH</strong></td>
+                                    <td></td>
+                                    <td><strong>20,000</strong></td>
+                                    <td>(Hors valorisation RH)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">10</span></footer>
+        </section>
+
+        <!-- 10. Planning Gantt -->
+        <section class="slide" id="slide11">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">PLANNING GANTT</h1>
+                </div>
+                <div class="slide-body">
+                    <div class="gantt-container">
+                        <h3>CALENDRIER LOGIQUE DE RÉALISATION (3 MOIS)</h3>
+                        <div class="table-container">
+                            <table class="evolution-table">
+                                <thead>
+                                    <tr>
+                                        <th>TÂCHE</th>
+                                        <th>MOIS 1 (CONCEPTION)</th>
+                                        <th>MOIS 2 (DÉV.)</th>
+                                        <th>MOIS 3 (TEST/LAUNCH)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>CADRAGE & SPECS</td>
+                                        <td>████████░░░░</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>DÉV. BACKEND/IA</td>
+                                        <td>░░░░████████████</td>
+                                        <td>████░░░░░░░░</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>FRONTEND & UI</td>
+                                        <td></td>
+                                        <td>░░░░████████</td>
+                                        <td>████░░░░</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TESTS & RECETTE</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>░░░░████████</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DÉPLOIEMENT</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>░░░░░░░░████</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="milestones">
+                            <h4>JALONS :</h4>
+                            <ul>
+                                <li><strong>JALON 1 (FIN MOIS 1) :</strong> Maquettes Validées</li>
+                                <li><strong>JALON 2 (FIN MOIS 2) :</strong> MVP Beta</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">11</span></footer>
+        </section>
+
+        <!-- 11. Lean Canvas -->
+        <section class="slide" id="slide12">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">LEAN CANVAS</h1>
+                </div>
+                <div class="slide-body">
+                    <div class="table-container">
+                        <table class="evolution-table">
+                            <thead>
+                                <tr>
+                                    <th>PROBLÈME</th>
+                                    <th>SOLUTION</th>
+                                    <th>PROPOSITION DE VALEUR</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>• Rejet ATS<br>• Pas de feedback</td>
+                                    <td>• Analyseur IA<br>• Score ATS</td>
+                                    <td><strong>"PASSEZ LE FILTRE DES ROBOTS."</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <table class="evolution-table" style="margin-top: 30px;">
+                            <thead>
+                                <tr>
+                                    <th>AVANTAGE</th>
+                                    <th>CLIENTS</th>
+                                    <th>COÛTS</th>
+                                    <th>REVENU</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>• Techno NLP<br>• Focus Maroc</td>
+                                    <td>• Étudiants<br>• Jeunes diplômés</td>
+                                    <td>Cloud, Dév., Mktg</td>
+                                    <td>Freemium, Premium</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">12</span></footer>
+        </section>
+
+        <!-- 12. Design Thinking -->
+        <section class="slide" id="slide13">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">DESIGN THINKING</h1>
+                </div>
+                <div class="slide-body">
+                    <div class="process-container">
+                        <div class="process-item">
+                            <div class="process-number">1</div>
+                            <div class="process-content">
+                                <h4>EMPATHIE</h4>
+                                <p>50+ interviews étudiants</p>
+                            </div>
+                        </div>
+                        <div class="process-item">
+                            <div class="process-number">2</div>
+                            <div class="process-content">
+                                <h4>DÉFINIR</h4>
+                                <p>"Optimiser un CV en &lt;5 min"</p>
+                            </div>
+                        </div>
+                        <div class="process-item">
+                            <div class="process-number">3</div>
+                            <div class="process-content">
+                                <h4>IDÉATION</h4>
+                                <p>Brainstorming</p>
+                            </div>
+                        </div>
+                        <div class="process-item">
+                            <div class="process-number">4</div>
+                            <div class="process-content">
+                                <h4>PROTOTYPE</h4>
+                                <p>Maquettes Figma</p>
+                            </div>
+                        </div>
+                        <div class="process-item">
+                            <div class="process-number">5</div>
+                            <div class="process-content">
+                                <h4>TESTER</h4>
+                                <p>Validation par 20 Bêta-testeurs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status-box">
+                        <p><i class="fas fa-cog"></i> Maquette : Landing Page disponible</p>
+                        <p><i class="fas fa-tools"></i> En cours de développement (Backend 80%)</p>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">13</span></footer>
+        </section>
+
+        <!-- 13. Innovation -->
+        <section class="slide" id="slide14">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">CLASSIFICATION DE L'INNOVATION</h1>
+                </div>
+                <div class="slide-body">
+                    <div class="innovation-types">
+                        <div class="innovation-item">
+                            <i class="fas fa-sync-alt"></i>
+                            <h4>INNOVATION INCRÉMENTALE</h4>
+                            <p>Amélioration continue du processus de recrutement (plus rapide, plus précis que Word)</p>
+                        </div>
+                        <div class="innovation-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <h4>INNOVATION ADJACENTE</h4>
+                            <p>Application de l'IA générative (technologie existante) à un nouveau marché (Étudiants marocains)</p>
+                        </div>
+                    </div>
+                    <div class="roadmap-container">
+                        <h3>VISION FUTURE (ROADMAP)</h3>
+                        <div class="roadmap-item">
+                            <div class="phase-number">1</div>
+                            <div class="phase-content">
+                                <h4>PHASE 1</h4>
+                                <p>Web App (MVP) au Maroc</p>
+                            </div>
+                        </div>
+                        <div class="roadmap-item">
+                            <div class="phase-number">2</div>
+                            <div class="phase-content">
+                                <h4>PHASE 2</h4>
+                                <p>App Mobile + Modules "Lettre de motivation"</p>
+                            </div>
+                        </div>
+                        <div class="roadmap-item">
+                            <div class="phase-number">3</div>
+                            <div class="phase-content">
+                                <h4>PHASE 3</h4>
+                                <p>Expansion Afrique Francophone</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">14</span></footer>
+        </section>
+
+        <!-- 14. Exécution Agile -->
+        <section class="slide" id="slide15">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">EXÉCUTION AGILE</h1>
+                </div>
+                <div class="slide-body">
+                    <div class="agile-methodology">
+                        <h3>MÉTHODOLOGIE :</h3>
+                        <ul>
+                            <li><i class="fas fa-calendar-week"></i> Sprints de 2 semaines</li>
+                            <li><i class="fas fa-comments"></i> Daily Meeting</li>
+                            <li><i class="fas fa-sync"></i> Revue de Sprint</li>
+                        </ul>
+                    </div>
+                    <div class="kanban-container">
+                        <h3>TABLEAU KANBAN</h3>
+                        <div class="kanban-board">
+                            <div class="kanban-column">
+                                <div class="column-header">À FAIRE</div>
+                                <div class="task-card">• Intégration Stripe</div>
+                                <div class="task-card">• Tests E2E</div>
+                                <div class="task-card">• Rédaction CGU</div>
+                            </div>
+                            <div class="kanban-column">
+                                <div class="column-header">EN COURS</div>
+                                <div class="task-card highlighted">• <strong>Optim. IA</strong> (Youness)</div>
+                                <div class="task-card highlighted">• <strong>Dashboard</strong> (Abdellah)</div>
+                                <div class="task-card highlighted">• <strong>Pipeline CI/CD</strong> (Zakaria)</div>
+                            </div>
+                            <div class="kanban-column">
+                                <div class="column-header">TERMINÉ</div>
+                                <div class="task-card">• Config AWS</div>
+                                <div class="task-card">• Charte Graphique</div>
+                                <div class="task-card">• Achat Domaine</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">15</span></footer>
+        </section>
+
+        <!-- 15. Conclusion -->
+        <section class="slide" id="slide16">
+            <div class="slide-content">
+                <div class="slide-body">
+                    <div class="final-statement">
+                        <div class="statement-text">
+                            <h3>MERCI DE VOTRE ATTENTION</h3>
+                            <p style="margin-top: 30px;">CVision allie <strong>innovation technologique</strong> et <strong>gestion de projet rigoureuse</strong> (WBS, RACI, Lean) pour résoudre le problème du chômage des jeunes diplômés.</p>
+                            
+                            <div class="next-steps">
+                                <h4>PROCHAINES ÉTAPES :</h4>
+                                <ol>
+                                    <li>Finalisation du MVP (Backend achevé à 80%)</li>
+                                    <li>Lancement Bêta auprès des étudiants de l'ENSA</li>
+                                    <li>Analyse des KPIs et itération</li>
+                                </ol>
+                            </div>
+                            
+                            <p style="margin-top: 30px; font-size: 1.8em;"><strong>Questions ?</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">16</span></footer>
+        </section>
+
+    </main>
+
+    <!-- Slide Navigation Dots -->
+    <div class="slide-dots" id="slideDots"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
