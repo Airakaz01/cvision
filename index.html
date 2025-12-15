@@ -63,9 +63,9 @@
                 </div>
             </div>
             
+            <!-- Section Encadrant -->
             <div class="supervisor">
-                <span>Encadré par :</span>
-                <strong>Pr. Hind HAFSI</strong>
+                <p>Encadré par : <strong>Pr. Hind HAFSI</strong></p>
             </div>
             
             <div class="date">
@@ -73,8 +73,12 @@
             </div>
         </div>
     </div>
-    <footer class="slide-footer"><span class="slide-number">1 / 20</span></footer>
+
+    <footer class="slide-footer">
+        <span class="slide-number">1 / 20</span>
+    </footer>
 </section>
+
 
         <!-- PAGE 2: Sommaire -->
         <section class="slide" id="slide2">
@@ -658,51 +662,69 @@
         </section>
 
         <!-- PAGE 17: Risques -->
-        <section class="slide" id="slide17">
-            <div class="slide-content">
-                <div class="slide-header">
-                    <h1 class="slide-title">15. GESTION DES RISQUES</h1>
-                    <p class="slide-subtitle">Formule : Criticité = Probabilité x Impact</p>
-                </div>
-                <div class="slide-body">
-                    <table class="risk-table">
-                        <thead>
-                            <tr>
-                                <th>Risque</th>
-                                <th>Prob.</th>
-                                <th>Imp.</th>
-                                <th>Criticité</th>
-                                <th>Plan d'Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="risk-critical">
-                                <td><strong>Tech :</strong> Hallucination IA</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td><strong>12 (Critique)</strong></td>
-                                <td>Vérification règles métiers + Disclaimer</td>
-                            </tr>
-                            <tr class="risk-medium">
-                                <td><strong>Financier :</strong> Dépassement Cloud</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td><strong>6 (Moyen)</strong></td>
-                                <td>Alertes budget AWS + Optim. code</td>
-                            </tr>
-                            <tr class="risk-high">
-                                <td><strong>Marché :</strong> Adoption faible</td>
-                                <td>2</td>
-                                <td>4</td>
-                                <td><strong>8 (Élevé)</strong></td>
-                                <td>Freemium + Partenariats BDE</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <footer class="slide-footer"><span class="slide-number">17 / 20</span></footer>
-        </section>
+<section class="slide" id="slide17">
+    <div class="slide-content">
+        
+        <div class="slide-header">
+            <h1 class="slide-title">15. GESTION DES RISQUES</h1>
+            <p class="slide-subtitle">Criticité = Probabilité × Impact</p>
+        </div>
+
+        <div class="slide-body">
+            <table class="risk-table">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Risque</th>
+                        <th>P</th>
+                        <th>I</th>
+                        <th>C</th>
+                        <th>Plan d’action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="risk-critical">
+                        <td>Technique</td>
+                        <td>Hallucination de l’IA</td>
+                        <td>Élevée</td>
+                        <td>Fort</td>
+                        <td><strong>RC</strong></td>
+                        <td>
+                            Validation humaine + règles métiers + disclaimer
+                        </td>
+                    </tr>
+
+                    <tr class="risk-significant">
+                        <td>Financier</td>
+                        <td>Dépassement des coûts Cloud</td>
+                        <td>Moyenne</td>
+                        <td>Moyen</td>
+                        <td><strong>RS</strong></td>
+                        <td>
+                            Alertes budget AWS + optimisation des requêtes
+                        </td>
+                    </tr>
+
+                    <tr class="risk-moderate">
+                        <td>Marché</td>
+                        <td>Faible adoption utilisateur</td>
+                        <td>Moyenne</td>
+                        <td>Fort</td>
+                        <td><strong>RM</strong></td>
+                        <td>
+                            Modèle freemium + partenariats étudiants
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer class="slide-footer">
+        <span class="slide-number">17 / 20</span>
+    </footer>
+</section>
 
         <!-- PAGE 18: Clôture -->
 <section class="slide" id="slide18">
