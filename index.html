@@ -363,39 +363,58 @@
                     <h1 class="slide-title">8. PLANNING GANTT</h1>
                     <p class="slide-subtitle">Calendrier logique de réalisation (3 mois)</p>
                 </div>
-                <div class="slide-body">
-                    <div class="gantt-chart">
-                        <div class="gantt-header">
-                            <div>Mois 1 (Conception)</div>
-                            <div>Mois 2 (Dév.)</div>
-                            <div>Mois 3 (Test/Launch)</div>
+<div class="gantt-wrapper">
+                        <div class="gantt-header-row">
+                            <div class="task-label-header"></div>
+                            <div class="gantt-timeline-header">
+                                <div class="timeline-month">Mois 1 (Conception)</div>
+                                <div class="timeline-month">Mois 2 (Dév.)</div>
+                                <div class="timeline-month">Mois 3 (Test/Launch)</div>
+                            </div>
                         </div>
-                        <div class="gantt-row">
-                            <div class="task-name">Cadrage & Specs</div>
-                            <div class="task-bar bar-1"></div>
+                        <div class="gantt-body">
+                            <div class="gantt-row">
+                                <div class="task-label">Cadrage & Specs</div>
+                                <div class="gantt-timeline">
+                                    <div class="task-bar" style="left: 0%; width: 33.33%; background: #17a2b8;"></div>
+                                </div>
+                            </div>
+                            <div class="gantt-row">
+                                <div class="task-label">Dév. Backend/IA</div>
+                                <div class="gantt-timeline">
+                                    <div class="task-bar" style="left: 20%; width: 60%; background: #0d8c9e;"></div>
+                                </div>
+                            </div>
+                            <div class="gantt-row">
+                                <div class="task-label">Frontend & UI</div>
+                                <div class="gantt-timeline">
+                                    <div class="task-bar" style="left: 33.33%; width: 50%; background: #5a8ca5;"></div>
+                                </div>
+                            </div>
+                            <div class="gantt-row">
+                                <div class="task-label">Tests & Recette</div>
+                                <div class="gantt-timeline">
+                                    <div class="task-bar" style="left: 66.67%; width: 25%; background: #ffa500;"></div>
+                                </div>
+                            </div>
+                            <div class="gantt-row">
+                                <div class="task-label">Déploiement</div>
+                                <div class="gantt-timeline">
+                                    <div class="task-bar" style="left: 80%; width: 20%; background: #28a745;"></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="gantt-row">
-                            <div class="task-name">Dév. Backend/IA</div>
-                            <div class="task-bar bar-2"></div>
-                        </div>
-                        <div class="gantt-row">
-                            <div class="task-name">Frontend & UI</div>
-                            <div class="task-bar bar-3"></div>
-                        </div>
-                        <div class="gantt-row">
-                            <div class="task-name">Tests & Recette</div>
-                            <div class="task-bar bar-4"></div>
-                        </div>
-                        <div class="gantt-row">
-                            <div class="task-name">Déploiement</div>
-                            <div class="task-bar bar-5"></div>
-                        </div>
-                        <div class="milestones-line">
-                            <div class="milestone m1">Jalon 1 : Maquettes</div>
-                            <div class="milestone m2">Jalon 2 : MVP Beta</div>
+                        <div class="gantt-milestones">
+                            <div class="milestone-marker" style="left: 20%;">
+                                <div class="milestone-line"></div>
+                                <div class="milestone-label">Jalon 1 : Maquettes</div>
+                            </div>
+                            <div class="milestone-marker" style="left: 60%;">
+                                <div class="milestone-line"></div>
+                                <div class="milestone-label">Jalon 2 : MVP Beta</div>
+                            </div>
                         </div>
                     </div>
-                </div>
             </div>
             <footer class="slide-footer"><span class="slide-number">10 / 20</span></footer>
         </section>
