@@ -889,18 +889,18 @@ body:-ms-fullscreen .slide {
 }
 
 #slide1 .slide-header {
-    margin-bottom: 25px;
+    margin-bottom: -10px;
 }
 
 #slide1 .team-section {
-    margin: 30px 0;
+    margin: 10px 0;
 }
 
 #slide1 .supervisor {
-    margin-top: 10px;
+    margin-top: 0px;
 }
 #slide1 .main-title {
-    font-size: 3.2em;
+    font-size: 3em;
 }
 
 .slide {
@@ -1530,4 +1530,80 @@ body:-moz-full-screen #slide13 .slide-content {
 .supervisor strong {
     margin-left: 5px;
     font-weight: 700;
+}
+/* CORRECTION DÉFINITIVE SLIDE 1 - AUCUN SCROLL */
+#slide1 {
+    overflow: hidden !important;
+}
+
+#slide1 .slide-content {
+    height: calc(100vh - 120px); /* Hauteur totale moins navigation et footer */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden !important;
+    padding: 20px 0;
+}
+
+#slide1 .slide-body {
+    overflow: hidden !important;
+    flex-shrink: 0;
+}
+
+/* Réduire légèrement les espacements pour tout faire tenir */
+#slide1 .logos-header {
+    margin-bottom: 15px;
+}
+
+#slide1 .logos-header img {
+    height: 60px;
+}
+
+#slide1 .main-logo {
+    max-width: 350px;
+    margin-bottom: 0.5rem;
+}
+
+#slide1 .subtitle {
+    font-size: 1.8em;
+    margin: 0.8rem 0;
+}
+
+#slide1 .academic-context {
+    margin: 1rem 0;
+}
+
+#slide1 .academic-context p {
+    margin: 0.3rem 0;
+    font-size: 1.1em;
+}
+
+#slide1 .divider {
+    margin: 20px auto;
+    width: 200px;
+}
+
+#slide1 .team-section {
+    margin: 20px 0;
+}
+
+#slide1 .team-section h3 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+#slide1 .presenters {
+    font-size: 1.2em;
+    gap: 15px;
+}
+
+#slide1 .supervisor {
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+#slide1 .date {
+    margin-top: 10px;
+    font-size: 1em;
 }
