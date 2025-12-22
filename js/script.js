@@ -1,6 +1,6 @@
 // Configuration de la présentation
 const PRESENTATION_CONFIG = {
-    totalSlides: 20, // Mis à jour pour correspondre au PDF (20 pages)
+    totalSlides: 22, // Mis à jour pour correspondre au PDF (20 pages)
     transitionSpeed: 500,
     isFullscreen: false
 };
